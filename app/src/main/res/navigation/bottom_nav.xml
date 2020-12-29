@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="id.febridk.spaceinvasion.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_coronaFragment"
+            app:destination="@id/coronaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_hospitalFragment"
+            app:destination="@id/hospitalFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coronaFragment"
+        android:name="id.febridk.spaceinvasion.ui.corona.CoronaFragment"
+        android:label="fragment_corona"
+        tools:layout="@layout/fragment_corona" />
+    <fragment
+        android:id="@+id/hospitalFragment"
+        android:name="id.febridk.spaceinvasion.ui.hospital.HospitalFragment"
+        android:label="fragment_hospital"
+        tools:layout="@layout/fragment_hospital" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="id.febridk.spaceinvasion.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

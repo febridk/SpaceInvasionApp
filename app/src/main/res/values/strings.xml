@@ -8,4 +8,8 @@
     <string name="btnlogin">Login</string>
     <string name="btnregister">Register</string>
     <string name="fullname">Enter your full name</string>
+    <string name="home">Home</string>
+    <string name="corona">Corona</string>
+    <string name="hospital">Hospital</string>
+    <string name="profile">Profile</string>
 </resources>
